@@ -24,6 +24,12 @@ app.get("/tools", (req, res) => {
     res.sendFile(__dirname + "/public/tools/tools.html");
 });
 
+app.get("/theory", (req, res) => {
+    // this also works:
+    // res.sendFile("index.html", { root: __dirname });
+    res.sendFile(__dirname + "/public/theory/theory.html");
+});
+
 
 const PORT = process.env.PORT || 8080;
 

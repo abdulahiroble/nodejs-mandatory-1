@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Theory</title>
+  </head>
+  <body style="background-color: #efefef">
+    <div class="flex">
+      <div class="flex-col">
+        <div class="p-5 font-bold" style="background-color: #70a861">
+          <div class="text-white mx-10">
+            <a href="/">Introduction to NodeJS</a>
+          </div>
+        </div>
+        <div
+          class="flex flex-col p-14 h-full text-white"
+          style="background-color: #343131"
+        >
+          <div class="mb-10 text-blue-300 -ml-5 font-bold">CONTENTS:</div>
+          <div class="-ml-5"><a href="/terminalcommands">Terminal</a></div>
+          <div class="my-5 -ml-5"><a href="/codesnippets">Code snippets</a></div>
+          <div class="-ml-5"><a href="/tools">Tools</a></div>
+          <div class="-ml-5 my-5"><a href="/theory">Theory</a></div>
+        </div>
+      </div>
+
+      <div class="p-5 w-3/6" style="background-color: #fcfcfc">
+
+        <h1 class="text-3xl font-bold py-10">NodeJS Teori</h1>
+
+        <h3 class="text-2xl font-bold">GET/POST</h3></br>
+
+          <table class="w-5/6 table-auto border-collapse border border-green-800">
+          <tr>
+            <th class="text-left border border-green-600">HTTP Method</th>
+            <th class="text-left border border-green-600">Endpoint</th>
+            <th class="text-left border border-green-600">What it does</th>
+          </tr>
+          <tr>
+            <td class="text-left border border-green-600">GET</td>
+            <td class="text-left border border-green-600">localhost:8080/</td>
+            <td class="text-left border border-green-600">Retrieves website</td>
+          </tr>
+          <tr>
+            <td class="text-left border border-green-600">GET</td>
+            <td class="text-left border border-green-600">localhost:8080/theory/1</td>
+            <td class="text-left border border-green-600">Retrieves particular theory by id</td>
+          </tr>
+          <tr>
+            <td class="text-left border border-green-600">POST</td>
+            <td class="text-left border border-green-600">localhost:8080/theory/add</td>
+            <td class="text-left border border-green-600">Creates a new theory ressource</td>
+          </tr>
+          <tr>
+            <td class="text-left border border-green-600">PUT</td>
+            <td class="text-left border border-green-600">localhost:8080/theory/1</td>
+            <td class="text-left border border-green-600">Update an existing theory</td>
+          </tr>
+        </table></br>
+
+        <h3 class="text-2xl font-bold">Hvad er HTTP?</h3></br>
+        <p>The Hypertext Transfer Protocol (HTTP) er designet til at kunne kommunikere mellem klient og server. Det arbejder med en request/response protocol mellem klient og server. 
+        Eksempelvis sender klienten (browseren) en HTTP request til serveren, som så returnerer et response til klienten. 
+        Responset indeholder status information omkring requestet og kan også indeholde det requested indhold.</p> </br>
+        <h4 class="text-xl">Der findes følgende HTTP metoder:</h4> </br>
+        <ul class="font-bold">
+          <li>GET</li>
+          <li>POST</li>
+          <li>PUT</li>
+          <li>HEAD</li>
+          <li>DELETE</li>
+          <li>PATCH</li>
+          <li>OPTIONS</li>
+        </ul> </br>
+
+        <p>De mest almindelige er GET og POST.</p></br>
+        
+        
+        <h3 class="text-2xl font-bold">GET</h3></br>
+        <p class="font-bold">GET bruges til at requeste data fra en specifik ressource.</p></br>
+        <p class="font-bold">GET er en af de hyppigeste brugte HTTP metoder.</p></br>
+        <p>Forneden ser vi at vores query string (name/value par), som sendes i URL'en af et GET request:</p></br>
+        <p class="border border-black py-2 text-center">/test/demo_form.php?name1=value1&name2=value2</p> </br>
+
+        <h3 class="text-2xl font-bold">POST</h3></br>
+        <p class="font-bold">POST bliver brugt til at sende data til en server for at oprette/opdatere en ressource.</p></br>
+        <p>Dataen som sendes til serveren med POST er gemt i request bodyen af HTTP requestet:</p></br>
+        <p class="border border-black py-2 text-center">POST /test/demo_form.php HTTP/1.1<br>
+          Host: miturl.com<br>
+          name1=value1&name2=value2</p> </br>
+        <p class="font-bold">POST er også en af de hyppigeste brugte HTTP metoder.</p></br>
+
+
+
+
+
+ 
+      </div>
+    </div>
+  </body>
+</html>
