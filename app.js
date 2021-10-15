@@ -10,13 +10,11 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/frontpage/index.html");
 });
 
-
-app.get("/tools", (req, res) => {
+app.get("/terminalcommands", (req, res) => {
     // this also works:
     // res.sendFile("index.html", { root: __dirname });
-    res.sendFile(__dirname + "/public/tools/tools.html");
+    res.sendFile(__dirname + "/public/terminalcommands/terminalcommands.html");
 });
-
 const PORT = process.env.PORT || 8080;
 
 const server = app.listen(PORT, (error) => {
