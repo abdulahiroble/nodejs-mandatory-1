@@ -15,8 +15,6 @@ app.get("/terminalcommands", (req, res) => {
     // res.sendFile("index.html", { root: __dirname });
     res.sendFile(__dirname + "/public/terminalcommands/terminalcommands.html");
 });
-
-
 const PORT = process.env.PORT || 8080;
 
 const server = app.listen(PORT, (error) => {
