@@ -4,9 +4,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Terminal commands</title>
   </head>
-  <body>
-    <h1>Hello world!</h1>
+  <body style="background-color: #efefef">
+    <div class="flex">
+      <div class="flex-col">
+        <div class="p-5 font-bold" style="background-color: #70a861">
+          <div class="text-white mx-10">
+            <a href="#">Introduction to node js</a>
+          </div>
+        </div>
+        <div
+          class="flex flex-col p-14 h-screen text-white"
+          style="background-color: #343131"
+        >
+          <div class="mb-10 text-blue-300 -ml-5 font-bold">CONTENTS:</div>
+          <div class="-ml-5"><a href="#">Terminal</a></div>
+          <div class="my-5 -ml-5"><a href="#">Code snippets</a></div>
+          <div class="-ml-5"><a href="#">Tools</a></div>
+        </div>
+      </div>
+
+      <div class="p-5 w-3/6" style="background-color: #fcfcfc">
+
+        <h1 class="text-3xl font-bold py-10">Introduktion til NodeJS</h1>
+
+        <div class="flex flex-row justify-between">
+          
+          <div class="w-5/6">
+            <p>Node.js er et programmeringsmiljø der er bygget på javascriptmaskinen fra Chrome version 8, og som gør det muligt at afvikle avancerede programmer.
+
+             Node.js er gået hen og blevet meget populær de seneste år, og der findes mange scripts der er bygget på det. Men hvad er det egentlig? Det skal vi kigge på i denne artikel.
+            
+              Javascript har været et programmeringssprog der har været anvendt på klientsiden i mange år. Det som Node.js gør er at brede den ud, så den også bliver brugt på serversiden. Node.js skal med andre ord altså installeres på selve serveren. Det er også det der gør at du ikke kan installere Node.js applikationer på de fleste shared hostservere, fordi de simpelthen ikke har Node.js installeret.
+            
+             Når du kører javascript på serversiden, så kan du udvikle webapplikationer i et enkelt sprog, fremfor at anvende ét sprog til backend og et andet til frontend.
+            
+             En af fordelene ved Node.js teknologi er at den er hurtig. </p>
+
+          </div>
+
+          <div><img class="" src="images/nodejs-01.png" alt="NodeJS_logo"></div>
+
+        </div>
+        
+        <p>Det er den bl.a. fordi Node.js sender opgaverne afsted til motoren løbende som de kommer, og venter ikke på at én opgave bliver færdig før den næste bliver sendt afsted. Dette gør ellers mange andre teknologier, såsom ASP og PHP.
+            
+          En anden fidus ved Node.js er at det er en multiplatform teknologi. Javascripts kan jo anvendes på alle platforme, herunder Windows, Mac og Linux – og det samme gælder altså Node.js.
+          
+          Node.js kan generere dynamisk indhold, behandle filer der ligger på serveren, indhente data fra formularer og kommunikere med databaser. Alt sammen i ét sprog.
+          
+          Selve applikationerne består af Node.js filer, der allesammen ender på .js. Det er disse filer der indeholder de opgaver der skal løses når serveren kører.</p> 
+
+      <div>
+        <h3 class="text-2xl font-bold py-10">Content:</h3>
+
+        <a class="text-blue-500" href="/terminalcommands">Terminal commands</a></br>
+        <a class="text-blue-500" href="/codesnippets">Code snippets</a></br>
+        <a class="text-blue-500" href="/tools">Værktøjer brugt i NodeJS</a></br>
+        <a class="text-blue-500" href="/theory">NodeJS Teori</a></br>
+
+      </div>
+
+ 
+      </div>
+    </div>
   </body>
 </html>
