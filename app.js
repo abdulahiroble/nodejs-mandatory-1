@@ -18,6 +18,13 @@ app.get("/terminalcommands", (req, res) => {
     res.sendFile(__dirname + "/public/terminalcommands/terminalcommands.html");
 });
 
+app.get("/codesnippets", (req, res) => {
+    // this also works:
+    // res.sendFile("index.html", { root: __dirname });
+    res.sendFile(__dirname + "/public/codesnippets/codesnippets.html");
+});
+
+
 app.get("/tools", (req, res) => {
     // this also works:
     // res.sendFile("index.html", { root: __dirname });
